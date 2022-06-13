@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="text-center">Survey Form</p>
+        <form id="survey-form" class="survey-form">
+            <div class="col-7 mt-5 pt-3 pb-2">
+                <label for="name" class="heading">Name<span class="text-danger">*</span></label>
+                <div class="row form-group">
+                    <div class="col form-group">
+                        <input class="form-control" type="text" name="fname" id="first-name" placeholder="First Name"
+                            required>
+                        <label class="desc-text" id="name-label">First</label>
+                    </div>
+                    <div class="col form-group">
+                        <input class="form-control" type="text" name="lname" id="last-name" placeholder="Last Name"
+                            required>
+                        <label class="desc-text" id="lname-label">Last</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 pb-4 form-group">
+                <label for="email" id="email-label" class="heading">Email<span class="text-danger">*</span></label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="col-7 pb-4 form-group">
+                <label for="experience" id="number-label" class="heading">Your Experience<span
+                        class="text-danger">*</span></label><br>
+                <div>
+                    <span class="fa fa-star checked" value="1"></span>
+                    <span class="fa fa-star checked" value="2"></span>
+                    <span class="fa fa-star checked" value="3"></span>
+                    <span class="fa fa-star checked" value="4"></span>
+                    <span class="fa fa-star checked" value="5"></span> <br>
+                </div>
+                <label for="experience" class="desc-text">Overall, how would you rate your experience with us?</label>
+            </div>
+            <div class="col-12 pb-4 form-group">
+                <label for="satisfied-rating" class="heading">How satisfied are you with<span
+                        class="text-danger">*</span></label>
+                <table class="table table-striped table-borderless">
+                    <thead>
+                        <tr>
+                            <th class="col-3 table-heading"></th>
+                            <th class="col-2 table-heading">Very Unsatisfied</th>
+                            <th class="col-2 table-heading">Unsatisfied</th>
+                            <th class="col-2 table-heading">Neutral</th>
+                            <th class="col-2 table-heading">Satisfied</th>
+                            <th class="col-2 table-heading">Very Satisfied</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row">
+                            <td class="col-3 form-check-label  pb-1 pt-1">Purchase</td>
+                            <!-- <div class="rating"> -->
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input radio-btn" name="purchase-rating"
+                                    id="purchase-vu" value="Very Unsatisfied">
+                                <!-- <span class="radio-btn-custom"></span> -->
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input radio-btn" name="purchase-rating"
+                                    id="purchase-u" value="Unsatisfied">
+                                <!-- <span class="radio-btn-custom"></span> -->
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input radio-btn" name="purchase-rating"
+                                    id="purchase-n" value="Neutral">
+                                <!-- <span class="radio-btn-custom"></span> -->
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input radio-btn" name="purchase-rating"
+                                    id="purchase-s" value="Satisfied">
+                                <!-- <span class="radio-btn-custom"></span> -->
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input radio-btn" name="purchase-rating"
+                                    id="purchase-vs" value="Very Satisfied">
+                                <!-- <span class="radio-btn-custom"></span> -->
+                            </td>
+                            <!-- </div> -->
+                        </tr>
+                        <tr class="table-row">
+                            <td class="col-3 form-check-label pb-1 pt-1">Service</td>
+                            <!-- <div class="rating"> -->
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="service-rating" id="service-vu"
+                                    value="Very Unsatisfied">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="service-rating" id="service-u"
+                                    value="Unsatisfied">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="service-rating" id="service-n"
+                                    value="Neutral">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="service-rating" id="service-s"
+                                    value="Satisfied">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="service-rating" id="service-vs"
+                                    value="Very Satisfied">
+                            </td>
+                            <!-- </div> -->
+                        </tr>
+                        <tr class="table-row">
+                            <td class="col-3 form-check-label pb-1 pt-1">Company Overall</td>
+                            <!-- <div class="rating"> -->
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="co-rating" id="co-vu"
+                                    value="Very Unsatisfied">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="co-rating" id="co-u"
+                                    value="Unsatisfied">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="co-rating" id="co-n" value="Neutral">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="co-rating" id="co-s"
+                                    value="Satisfied">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="co-rating" id="co-vs"
+                                    value="Very Satisfied">
+                            </td>
+                            <!-- </div> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 pb-3 form-group">
+                <label for="likely-rating" class="heading">How likely are you to<span
+                        class="text-danger">*</span></label>
+                <table class="table table-striped table-borderless">
+                    <thead>
+                        <tr>
+                            <th class="col-3 table-heading"></th>
+                            <th class="col-2 table-heading">Very Unlikely</th>
+                            <th class="col-2 table-heading">Unlikely</th>
+                            <th class="col-2 table-heading">Neutral</th>
+                            <th class="col-2 table-heading">Likely</th>
+                            <th class="col-2 table-heading">Very Likely</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row">
+                            <td class="col-3 form-check-label  pb-1 pt-1">Buy from us again</td>
+                            <!-- <div class="rating"> -->
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="buy-rating" id="buy-vu"
+                                    value="Very Unlikely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="buy-rating" id="buy-u"
+                                    value="Unlikely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="buy-rating" id="buy-n"
+                                    value="Neutral">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="buy-rating" id="buy-l"
+                                    value="Likely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="buy-rating" id="buy-vl"
+                                    value="Very Likely">
+                            </td>
+                            <!-- </div> -->
+                        </tr>
+                        <tr class="table-row">
+                            <td class="col-3 form-check-label pb-1 pt-1">Recommend our products to others</td>
+                            <!-- <div class="rating"> -->
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-prod-rating"
+                                    id="recommend-prod-vu" value="Very Unlikely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-prod-rating"
+                                    id="recommend-prod-u" value="Unlikely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-prod-rating"
+                                    id="recommend-prod-n" value="Neutral">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-prod-rating"
+                                    id="recommend-prod-l" value="Likely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-prod-rating"
+                                    id="recommend-prod-vl" value="Very Likely">
+                            </td>
+                            <!-- </div> -->
+                        </tr>
+                        <tr class="table-row">
+                            <td class="col-3 form-check-label pb-1 pt-1">Recommend our company to others</td>
+                            <!-- <div class="rating"> -->
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-company-rating"
+                                    id="recommend-company-vu" value="Very Unlikely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-company-rating"
+                                    id="recommend-company-u" value="Unlikely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-company-rating"
+                                    id="recommend-company-n" value="Neutral">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-company-rating"
+                                    id="recommend-company-l" value="Likely">
+                            </td>
+                            <td class="col-2 rating">
+                                <input type="radio" class="form-check-input" name="recommend-company-rating"
+                                    id="recommend-company-vl" value="Very Likely">
+                            </td>
+                            <!-- </div> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 pb-4 form-group">
+                <label for="comments" class="heading">Additional comments or suggestions</label>
+                <textarea class="form-control" type="text" rows="5" name="comments" id="comments"></textarea>
+            </div>
+
+            <div class="col mb-3 form-group">
+                <button id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>

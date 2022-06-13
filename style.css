@@ -1,0 +1,56 @@
+.heading{
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.desc-text {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.table-heading {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 10px 0px 10px 0px !important;
+}
+
+.table-row {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.table-row .rating {
+    text-align: center !important;
+    padding: 10px 0px 10px 0px !important;
+    cursor: pointer;
+}
+
+/* .submit-button{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+} */
+
+button {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    border: 1px solid rgb(162, 162, 162) !important;
+    border-radius: 0px !important;
+    padding: 12px 20px 12px 20px !important;
+    background-color: rgb(237, 237, 237) !important;
+}
+
+.checked{
+    padding: 10px 10px 10px 0px;
+    font-size: larger;
+    color: rgba(183, 181, 181, 0.706);
+}
+
+.checked:hover{
+    color: orange;
+}
+
